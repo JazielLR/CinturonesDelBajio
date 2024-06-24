@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<title>Catalogo C.B.J</title>
+<link rel="stylesheet" href="catalogo.css">
+<link rel="shortcut icon" href="LOGOP.ico" />
+</head>
+<body>
+<!--links js-->
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<!--navegador-->
+<div class="fondo-navbar">
+  <nav class="navbar navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand">CATALOGO</a>
+          <a href="#" aria-label="Carrito de compras">
+            <h1><i class="bi bi-cart4" onclick="toggleCart()"></i></h1>
+
+            <div id="cart" style="display:none;">
+              <h2>Carrito de Compras</h2>
+              <ul id="cart-items"></ul>
+              <p id="total-price"></p>
+              <button class="hide-cart-btn" onclick="hideCart()">Ocultar Carrito</button>
+          </div>
+        </a>        
+          <div class="barra">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </div>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">NAVEGADOR</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active navlink-catalogo" href="catalogo.html">CATALOGO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active"  href="info.html">SOBRE NOSOTROS</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+</div>
+<nav class="navsub">
+<a href="#hombre">Cinturones para hombre</a>
+<a href="#mujer">Cinturones para mujer</a>
+<a href="#piel exotica">Cinturones de piel exotica</a>
+</nav>
+<!--Productos catalogo-->
+<div class="categorias" id="hombre">
+<h1><center>CINTURONES DE HOMBRE</center></h1></div>
+ <!-- Producto 1 -->
+<div class="container text-center">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+    <div class="col-4"><div class="card tarjeta">
+      <img src="cinturon h1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">CINTURON BJ</h5>
+                <p class="card-text">Cinturon de piel de muy alta calidad y gran elegancia.</p>
+                <p class="card-text "><small class="price">$249 MX</small></p>
+                <button class="boton-agregar" onclick="addToCart('CINTURON BJ', 249)">Agregar al Carrito</button>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="LOGOP.ico" width="30px" height="30px">
+              <strong class="me-auto">C.B.J</strong>
+              <small>Ahora mismo</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              SE AH AGREGADO AL CARRITO!
+            </div>
+            </div>
+            </div>
+      </div>
+    </div>
+  </div>
+   <!-- Producto 2 -->
+    <div class="col-4"><div class="card tarjeta" >
+      <img src="cinturon hh1.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">CINTURON METAL BLACK</h5>
+        <p class="card-text">Cinturon de gran calidad con detalles metalicos.</p>
+        <p class="card-text "><small class="price">$229 MX</small></p>
+        <button class="boton-agregar" onclick="addToCart('CINTURON METAL BLACK', 229)">Agregar al Carrito</button>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="LOGOP.ico" width="30px" height="30px">
+              <strong class="me-auto">C.B.J</strong>
+              <small>Ahora mismo</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              SE AH AGREGADO AL CARRITO!
+            </div>
+            </div>
+            </div>
+      </div>
+    </div>
+  </div>
+   <!-- Producto 3 -->
+    <div class="col-4"><div class="card tarjeta">
+      <img src="cinturon h4.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">CINTURON PURE LINE</h5>
+        <p class="card-text">Cinturon ligero y moderno, ideal para un look fresco y casual.</p>
+        <p class="card-text "><small class="price">$199 MX</small></p>
+        <button class="boton-agregar" onclick="addToCart('CINTURON PURE LINE', 199)">Agregar al Carrito</button>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="LOGOP.ico" width="30px" height="30px">
+              <strong class="me-auto">C.B.J</strong>
+              <small>Ahora mismo</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              SE AH AGREGADO AL CARRITO!
+            </div>
+            </div>
+            </div>
+      </div>
+    </div>
+  </div>
+   <!-- Producto 4 -->
+    <div class="col-4"><div class="card tarjeta">
+      <img src="hombre1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">CINTURON TIGER</h5>
+                <p class="card-text">Cinturon de la mas alta calidad con la hebilla color oro.</p>
+                <p class="card-text "><small class="price">$299 MX</small></p>
+                <button class="boton-agregar" onclick="addToCart('CINTURON TIGER', 299)">Agregar al Carrito</button>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="LOGOP.ico" width="30px" height="30px">
+              <strong class="me-auto">C.B.J</strong>
+              <small>Ahora mismo</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              SE AH AGREGADO AL CARRITO!
+            </div>
+            </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+   <!-- Producto 5 -->
+  <div class="container text-center">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <div class="col-4"><div class="card tarjeta">
+        <img src="cinturon h3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CINTURON LH</h5>
+          <p class="card-text">El mejor cinturon para cualquier tipo de ocasion.</p>
+          <p class="card-text "><small class="price">$279 MX</small></p>
+          <button class="boton-agregar" onclick="addToCart('CINTURON LH', 279)">Agregar al Carrito</button>
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="LOGOP.ico" width="30px" height="30px">
+                <strong class="me-auto">C.B.J</strong>
+                <small>Ahora mismo</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                SE AH AGREGADO AL CARRITO!
+              </div>
+              </div>
+              </div>
+        </div>
+      </div>
+    </div>
+     <!-- Producto 6 -->
+      <div class="col-4"><div class="card tarjeta" >
+        <img src="cinturon h5.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CINTURON LINE BLACK</h5>
+                <p class="card-text">Cinturon fresco perfecto sin dejar a una lado la elegancia.</p>
+                <p class="card-text "><small class="price">$199 MX</small></p>
+                <button class="boton-agregar" onclick="addToCart('CINTURON LINE BLACK', 199)">Agregar al Carrito</button>
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="LOGOP.ico" width="30px" height="30px">
+                <strong class="me-auto">C.B.J</strong>
+                <small>Ahora mismo</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                SE AH AGREGADO AL CARRITO!
+              </div>
+              </div>
+              </div>
+        </div>
+      </div>
+    </div>
+     <!-- Producto 7 -->
+      <div class="col-4"><div class="card tarjeta">
+        <img src="hombre2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CINTURON JFJ</h5>
+                <p class="card-text">Cinturon con hebilla lisa que crea mas elegancia.</p>
+                <p class="card-text "><small class="price">$249 MX</small></p>
+                <button class="boton-agregar" onclick="addToCart('CINTURON JFJ', 249)">Agregar al Carrito</button>
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="LOGOP.ico" width="30px" height="30px">
+                <strong class="me-auto">C.B.J</strong>
+                <small>Ahora mismo</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                SE AH AGREGADO AL CARRITO!
+              </div>
+              </div>
+              </div>
+        </div>
+      </div>
+    </div>
+     <!-- Producto 8 -->
+      <div class="col-4"><div class="card tarjeta">
+        <img src="hombre3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">CINTURON ELEGANT</h5>
+          <p class="card-text">Cinturon excelente para cualquier fiesta o reunion.</p>
+          <p class="card-text "><small class="price">$259 MX</small></p>
+          <button class="boton-agregar" onclick="addToCart('CINTURON ELEGANT', 259)">Agregar al Carrito</button>
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="LOGOP.ico" width="30px" height="30px">
+                <strong class="me-auto">C.B.J</strong>
+                <small>Ahora mismo</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                SE AH AGREGADO AL CARRITO!
+              </div>
+              </div>
+              </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      <div class="categorias" id="mujer">
+        <h1><center>CINTURONES DE MUJER</center></h1></div>
+         <!-- Producto 9 -->
+      <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col-4"><div class="card tarjeta">
+            <img src="cinturon h6.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CINTURON BRONZE</h5>
+              <p class="card-text">CCinturon de mujer con detalles color bronce.</p>
+              <p class="card-text "><small class="price">$179 MX</small></p>
+              <button class="boton-agregar" onclick="addToCart('CINTURON BRONZE', 179)">Agregar al Carrito</button>
+              <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="LOGOP.ico" width="30px" height="30px">
+                    <strong class="me-auto">C.B.J</strong>
+                    <small>Ahora mismo</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    SE AH AGREGADO AL CARRITO!
+                  </div>
+                  </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+         <!-- Producto 10 -->
+          <div class="col-4"><div class="card tarjeta" >
+            <img src="mujer2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CINTURON PINK</h5>
+                <p class="card-text">Cinturon para mujer con gran porte y buen diseño.</p>
+                <p class="card-text "><small class="price">$229 MX</small></p>
+                <button class="boton-agregar" onclick="addToCart('CINTURON PINK', 229)">Agregar al Carrito</button>
+              <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="LOGOP.ico" width="30px" height="30px">
+                    <strong class="me-auto">C.B.J</strong>
+                    <small>Ahora mismo</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    SE AH AGREGADO AL CARRITO!
+                  </div>
+                  </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+         <!-- Producto 11 -->
+          <div class="col-4"><div class="card tarjeta">
+            <img src="mujer3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CINTURON AQUA</h5>
+                <p class="card-text">Cinturon vintage casual azul con hebilla redondeada.</p>
+                <p class="card-text "><small class="price">$199 MX</small></p>
+                <button class="boton-agregar" onclick="addToCart('CINTURON AQUA', 199)">Agregar al Carrito</button>
+              <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="LOGOP.ico" width="30px" height="30px">
+                    <strong class="me-auto">C.B.J</strong>
+                    <small>Ahora mismo</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    SE AH AGREGADO AL CARRITO!
+                  </div>
+                  </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+         <!-- Producto 12 -->
+          <div class="col-4"><div class="card tarjeta">
+            <img src="mujer4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CINTURON REVERSE</h5>
+              <p class="card-text">Cinturon de piel con su habitual hebila en cruz.</p>
+              <p class="card-text "><small class="price">$259 MX</small></p>
+              <button class="boton-agregar" onclick="addToCart('CINTURON REVERSE', 259)">Agregar al Carrito</button>
+              <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                    <img src="LOGOP.ico" width="30px" height="30px">
+                    <strong class="me-auto">C.B.J</strong>
+                    <small>Ahora mismo</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                  </div>
+                  <div class="toast-body">
+                    SE AH AGREGADO AL CARRITO!
+                </div>
+                  </div>
+                  </div>
+            </div>
+            </div>
+            </div>
+            </div>
+          </div>
+           <!-- Producto 13 -->
+          <div class="container text-center">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+              <div class="col-4"><div class="card tarjeta">
+                <img src="mujer5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CINTURON DOTTED</h5>
+                  <p class="card-text">Cinturon de cuero con detalles punteados en su diseño.</p>
+                  <p class="card-text "><small class="price">$199 MX</small></p>
+                  <button class="boton-agregar" onclick="addToCart('CINTURON DOTTED', 199)">Agregar al Carrito</button>
+                  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                        <img src="LOGOP.ico" width="30px" height="30px">
+                        <strong class="me-auto">C.B.J</strong>
+                        <small>Ahora mismo</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                        SE AH AGREGADO AL CARRITO!
+                      </div>
+                      </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+             <!-- Producto 14 -->
+              <div class="col-4"><div class="card tarjeta" >
+                <img src="cinturon h2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CINTURON HEARTH</h5>
+                <p class="card-text">Cinturon casual juvenil de mujer con gran estilo.</p>
+                <p class="card-text "><small class="price">$199 MX</small></p>
+                <button class="boton-agregar" onclick="addToCart('CINTURON HEARTH', 199)">Agregar al Carrito</button>
+                  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                        <img src="LOGOP.ico" width="30px" height="30px">
+                        <strong class="me-auto">C.B.J</strong>
+                        <small>Ahora mismo</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                        SE AH AGREGADO AL CARRITO!
+                      </div>
+                      </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+             <!-- Producto 15 -->
+              <div class="col-4"><div class="card tarjeta">
+                <img src="mujer1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CINTURON BROWN LINE</h5>
+                  <p class="card-text">Cinturon fresco y elegante de color marron casual.</p>
+                  <p class="card-text "><small class="price">$179 MX</small></p>
+                  <button class="boton-agregar" onclick="addToCart('CINTURON BROWN LINE', 179)">Agregar al Carrito</button>
+                  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                        <img src="LOGOP.ico" width="30px" height="30px">
+                        <strong class="me-auto">C.B.J</strong>
+                        <small>Ahora mismo</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                        SE AH AGREGADO AL CARRITO!
+                      </div>
+                      </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+             <!-- Producto 16 -->
+              <div class="col-4"><div class="card tarjeta">
+                <img src="cinturon h8.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CINTURON DG</h5>
+                  <p class="card-text">Cinturon de color rosa que le da un toque extravagante.</p>
+                  <p class="card-text "><small class="price">$269 MX</small></p>
+                  <button class="boton-agregar" onclick="addToCart('CINTURON DG', 269)">Agregar al Carrito</button>
+                  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                        <img src="LOGOP.ico" width="30px" height="30px">
+                        <strong class="me-auto">C.B.J</strong>
+                        <small>Ahora mismo</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                        SE AH AGREGADO AL CARRITO!
+                      </div>
+                      </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            </div>
+          </div>
+            <div class="categorias" id="piel exotica">
+              <h1><center>CINTURONES DE PIEL EXOTICA</center></h1></div>
+               <!-- Producto 17 -->
+          </div><div class="container text-center">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+              <div class="col-4"><div class="card tarjeta">
+                <img src="exotico1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CINTURON MNTR</h5>
+                <p class="card-text">Cinturon de piel de mantarraya simulando un ojo.</p>
+                <p class="card-text "><small class="price">$1199 MX</small></p>
+                <button class="boton-agregar" onclick="addToCart('CINTURON MNTR', 1199)">Agregar al Carrito</button>
+                  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                        <img src="LOGOP.ico" width="30px" height="30px">
+                        <strong class="me-auto">C.B.J</strong>
+                        <small>Ahora mismo</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                        SE AH AGREGADO AL CARRITO!
+                      </div>
+                      </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+             <!-- Producto 18 -->
+              <div class="col-4"><div class="card tarjeta" >
+                <img src="exotico2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CINTURON COBRA</h5>
+                <p class="card-text">Cinturon exotico de piel de cobra color roja.</p>
+                <p class="card-text "><small class="price">$1299 MX</small></p>
+                <button class="boton-agregar" onclick="addToCart('CINTURON COBRA', 1299)">Agregar al Carrito</button>
+                  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                        <img src="LOGOP.ico" width="30px" height="30px">
+                        <strong class="me-auto">C.B.J</strong>
+                        <small>Ahora mismo</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                        SE AH AGREGADO AL CARRITO!
+                      </div>
+                      </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+             <!-- Producto 19 -->
+              <div class="col-4"><div class="card tarjeta">
+                <img src="exotico3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CINTURON EKANS</h5>
+                <p class="card-text">Cinturon de piel de piton con hebilla de plata 925.</p>
+                <p class="card-text "><small class="price">$1449 MX</small></p>
+                <button class="boton-agregar" onclick="addToCart('CINTURON EKANS', 1449)">Agregar al Carrito</button>
+                  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                        <img src="LOGOP.ico" width="30px" height="30px">
+                        <strong class="me-auto">C.B.J</strong>
+                        <small>Ahora mismo</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                        SE AH AGREGADO AL CARRITO!
+                      </div>
+                      </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+             <!-- Producto 20 -->
+              <div class="col-4"><div class="card tarjeta">
+                <img src="exotico4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CINTURON MRRY</h5>
+                <p class="card-text">Cinturon elegante de piel de mantarraya de arrecife.</p>
+                <p class="card-text "><small class="price">$999 MX</small></p>
+                <button class="boton-agregar" onclick="addToCart('CINTURON MRRY', 999)">Agregar al Carrito</button>
+                  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                        <img src="LOGOP.ico" width="30px" height="30px">
+                        <strong class="me-auto">C.B.J</strong>
+                        <small>Ahora mismo</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                        SE AH AGREGADO AL CARRITO!
+                      </div>
+                      </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            </div>
+             <!-- Producto 21 -->
+            <div class="container text-center">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col-4"><div class="card tarjeta">
+                  <img src="exotico5.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">CINTURON COBRA ROUND</h5>
+                    <p class="card-text">Cinturon exotico de piel de cobra con hebilla redondeada.</p>
+                    <p class="card-text "><small class="price">$1349 MX</small></p>
+                    <button class="boton-agregar" onclick="addToCart('CINTURON BJ', 1349)">Agregar al Carrito</button>
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                          <img src="LOGOP.ico" width="30px" height="30px">
+                          <strong class="me-auto">C.B.J</strong>
+                          <small>Ahora mismo</small>
+                          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                          SE AH AGREGADO AL CARRITO!
+                        </div>
+                        </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+               <!-- Producto 22 -->
+                <div class="col-4"><div class="card tarjeta" >
+                  <img src="cinturon h7.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">CINTURON SNAKE</h5>
+                    <p class="card-text">Cinturon de piel de serpiente lujoso y prestigioso.</p>
+                    <p class="card-text "><small class="price">$1249 MX</small></p>
+                    <button class="boton-agregar" onclick="addToCart('CINTURON SNAKE', 1249)">Agregar al Carrito</button>
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                          <img src="LOGOP.ico" width="30px" height="30px">
+                          <strong class="me-auto">C.B.J</strong>
+                          <small>Ahora mismo</small>
+                          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                          SE AH AGREGADO AL CARRITO!
+                        </div>
+                        </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+               <!-- Producto 23 -->
+                <div class="col-4"><div class="card tarjeta">
+                  <img src="exotico7.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">CINTURON CROCODILE</h5>
+                <p class="card-text">Cinturon de piel de cocodrilo super exotico y elegante.</p>
+                <p class="card-text "><small class="price">$1499 MX</small></p>
+                <button class="boton-agregar" onclick="addToCart('CINTURON CROCODILE', 1499)">Agregar al Carrito</button>
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                          <img src="LOGOP.ico" width="30px" height="30px">
+                          <strong class="me-auto">C.B.J</strong>
+                          <small>Ahora mismo</small>
+                          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                          SE AH AGREGADO AL CARRITO!
+                        </div>
+                        </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+               <!-- Producto 24 -->
+                <div class="col-4"><div class="card tarjeta">
+                  <img src="exotico8.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">CINTURON BBLK</h5>
+                <p class="card-text">Cinturon hecho artesanalmente con gran diseño y elegancia.</p>
+                <p class="card-text "><small class="price">$799 MX</small></p>
+                <button class="boton-agregar" onclick="addToCart('CINTURON BBLK', 799)">Agregar al Carrito</button>
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                          <img src="LOGOP.ico" width="30px" height="30px">
+                          <strong class="me-auto">C.B.J</strong>
+                          <small>Ahora mismo</small>
+                          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                          SE AH AGREGADO AL CARRITO!
+                        </div>
+                        </div>
+                  </div>
+                  </div>
+                  </div>
+              </div>
+<button onclick="topFunction()" id="volver" title="Volver arriba">↑</button>
+<!--Pie de pagina-->
+  <div class="card-footer">
+    <div class="contact">
+    <h2>Contactenos</h2>
+    <ul>
+     <li><a href="tel:4776515327">4776515327</a></li>
+     <li><a href="tel:4776515327">4771336967</a></li>
+     <li><a href="tel:4776515327">4774893289</a></li>
+     <li><a href="mailto:cinturonesdelbajio@gmail.com">cinturonesdelbajio@gmail.com</a></li>
+     </ul>
+    </div>
+    <div class="sobre-nosotros">
+      <h2>Informacion<br><a href="info.html">Sobre Nosotros</a></h2>
+    </div>
+    <p class="card-text textf">Quejas y Sugerencias</p>
+    <textarea class="areaf"></textarea><br>
+    <a href="#mostrar-mensaje" id="mostrar-mensaje">Enviar</a>
+    <div id="mensaje">
+        Se ah enviado correctamente!
+    </div>
+        </div>
+  <div class="card-footer text-body-secondary">
+    COPYRIGHT 2024 DERECHOS RESERVADOS A CINTURONES DEL BAJIO.
+  </div>
+   </div>
+    </div>
+</body>
+</html>
